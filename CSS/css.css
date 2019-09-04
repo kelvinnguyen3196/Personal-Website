@@ -1,0 +1,117 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+p {
+    font-family: "Archivo Narrow";
+    font-size: 23px;
+}
+
+h2 {
+    font-family: 'Julius Sans One';
+    font-size: 35px;
+    text-align: center;
+}
+
+#nav li {
+    font-family: 'Julius Sans One';
+    font-size: 23px;
+    float: right;
+    width: 20%;
+    line-height: 65px;
+}
+
+#flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#flex2 {
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+    position: fixed;
+}
+
+#wrap {
+    height: 100px;;
+}
+
+#topLogo {
+    height: 100px;
+    width: 100px;
+}
+
+#nav {
+    flex: 1;
+}
+
+#mainImg {
+    background-image: url(../Images/Background%20v2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    line-height: 45vh;
+}
+
+#fadeIn {
+    animation: fadeIn ease 5s;
+    font-family: 'Julius Sans One';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 0px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#section {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#title {
+    font-family: 'Julius Sans One';
+    font-size: 45px;
+}
+
+#rightImg {
+    width: 20%;
+    height: 20%;
+    margin-right: 15%;
+    border: 1px;
+    border-color: black;
+    border-style: inset;
+    border-radius: 30px;
+}
+
+#leftText {
+    line-height: 2.5em;
+    text-align: left;
+    margin-left: 15%;
+    margin-right: 5%;
+    flex: 1;
+}
