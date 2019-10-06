@@ -48,7 +48,7 @@ h2 {
 }
 
 #wrap {
-    height: 100px;;
+    height: 100px;
 }
 
 #topLogo {
@@ -114,4 +114,35 @@ h2 {
     margin-left: 15%;
     margin-right: 5%;
     flex: 1;
+}
+
+#leftImg {
+    width: 20%;
+    height: 20%;
+    margin-left: 15%;
+    border: 1px;
+    border-color: black;
+    border-style: inset;
+    border-radius: 30px;
+}
+
+#rightText {
+    line-height: 2.5em;
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 5%;
+    flex: 1;
+}
+
+.bot {
+    height: 110px;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#test {
+    height: 100px;
+    position: relative;
+    z-index: 100;
 }
