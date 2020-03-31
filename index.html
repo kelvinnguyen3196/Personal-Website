@@ -1,73 +1,83 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Kelvin's Website</title>
-        <link type="text/css" rel="stylesheet" href="/CSS/css.css">
-        <link rel="shortcut icon" type="image/x-con" href="KN%20Logo.PNG" />
-        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Julius+Sans+One&display=swap" rel="stylesheet">
-    </head>
-    
-    <body>
-        <div id="wrap"></div>
-            <div id="flex2">
-                <a href="index.html"><img id="topLogo" src="Images/KN%20Logo.PNG" alt="KN Website Logo"></a>
-                <ul id="nav">
-                    <li><a href="https://www.google.com">Links</a></li>
-                    <li><a>About</a></li>
-                    <li><a href="https://www.mynameiskelvin.com/#projectsAnchor">Projects</a></li>
-                </ul>
-            </div>
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="jquery/jquery.js"></script>
+        <link rel="stylesheet" href="bootstrap/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css.css" type="text/css">
+        <script src="bootstrap/bootstrap.min.js"></script>
+        <script src="main.js"></script>
         
-        <div id="mainImg">
-            <p id="fadeIn">Programmer</p>
+        <link rel="shortcut icon" type="image/x-con" href="images/KN%20Logo.PNG"/>
+        <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow|Julius+Sans+One&display=swap" rel="stylesheet">
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Karla|Rubik&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- bg-primary(blue), bg-success(green), bg-warning(yellow), bg-info(teal), bg-danger(red) -->
+        <nav class="navbar navbar-expand-md bg-light fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topBar">
+                <span class="navbar-toggler-icon">&#9776;</span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="topBar">
+                <a class="navbar-brand">
+                    <img id="topLogo" src="images/Logo50x50.png">
+                </a>
+                <span class="navbar-text"></span>
+            
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-link">
+                        <a class="nav-link" href="#">Projects</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-link">
+                        <a class="nav-link" href="#">Links</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+        
+        <div class="parallax parallax-mobile">
+            <h1 id="fadeIn">Programmer</h1>
         </div>
         
-        <div id="section">
-            <a id="projectsAnchor"><h1 id="title">- Projects -</h1></a>
-            
-            <div id="flex">
-                
-                <div id="leftText">
+        <div class="container-fluid">
+            <h1>- Projects -</h1>
+            <div class="row">
+                <div class="col">
                     <h2>Meal Selector</h2>
                     <p>Have you ever had a time where you and your significant other just couldn't decide where to eat? Or even a time when you were just so hungry and everything sounded so good? Well, Meal Selector is the answer to your solutions!</p>
                     <p>This was the first iOS application that I designed and programmed in Xcode. It's written in Swift and is basically a random generator from a list that the user inputs. Once the user is satisfied with their list, the application will randomly select a number from the list and output the corresponding meal.</p>
                 </div>
-                
-                <img id="rightImg" src="Images/Meal%20Selector%20Screenshot%201.png" alt="Meal Selector Idle Screenshot">
-                
-            </div>
-            
-        </div>
-        
-        <div id="section">
-            <a id="projectsAnchor"><h1 id="title">- About -</h1></a>
-            
-            <div id="flex">
-                
-                <img id="leftImg" src="Images/Portrait%201.jpeg" alt="Meal Selector Idle Screenshot">
-                
-                <div id="rightText">
-                    <p>Hi! I'm Kelvin Nguyen, currently a computer science student at The University of California, Merced. Being born in the Bay Area I was surrounded by lot of technology. While I had an interest in techology I was sure about what part of it I wanted to go into. Honestly it wasn't until my senior year of high school that I decided I wanted to be a computer science major. It was a very simple moment too. My friend walked into english class one day and told me he was going to be a computer science major. I told him, "Me too!". I'm glad that I have continued to pursue computer science because I found a passion for it that pushes me to learn more and more.
+                <div class="col">
+                    <img id="imgInsert" src="images/Meal%20Selector%20Screenshot%201.png">
                 </div>
-                
             </div>
             
+            <h1>- About -</h1>
+            <div class="row">
+                <div class="col">
+                    <img id="imgInsert" src="images/Portrait%202.jpeg">
+                </div>
+                <div class="col">
+                    <p>Hi! I'm Kelvin Nguyen, currently a computer science student at The University of California, Merced. Being born in the Bay Area I was surrounded by lot of technology. While I had an interest in techology I was sure about what part of it I wanted to go into. Honestly it wasn't until my senior year of high school that I decided I wanted to be a computer science major. It was a very simple moment too. My friend walked into english class one day and told me he was going to be a computer science major. I told him, "Me too!". I'm glad that I have continued to pursue computer science because I found a passion for it that pushes me to learn more and more.</p>
+                </div>
+            </div>
+            
+            <div id="footer" class="row">
+                <div class="col">
+                    <a id="linkText" href="https://github.com/kelvinnguyen3196"><img id="linkLogo" src="Images/GitHub%20Icon.jpg" alt="GitHub Icon">Check out my GitHub</a>
+                </div>
+                <div class="col"></div>
+            </div>
         </div>
-        
-        
-        <div id="section" class ="bot">
-            <a href="https://github.com/kelvinnguyen3196"><img id="test" src="Images/GitHub%20Icon.jpg" alt="GitHub Icon"></a>
-            
-            
-            
-        </div>
-        
 
-        
+          
         
     </body>
-
-
-
 </html>
